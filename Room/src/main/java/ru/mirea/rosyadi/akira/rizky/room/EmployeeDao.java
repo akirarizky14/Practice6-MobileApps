@@ -7,8 +7,9 @@ import androidx.room.Query;
 import androidx.room.Update;
 
 import java.util.List;
+
 @Dao
-public interface Employee1 {
+public interface EmployeeDao {
     @Query("SELECT * FROM employee")
     List<Employee> getAll();
     @Query("SELECT * FROM employee WHERE id = :id")
